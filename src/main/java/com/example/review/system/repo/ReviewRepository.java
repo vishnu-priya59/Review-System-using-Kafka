@@ -83,7 +83,7 @@ public class ReviewRepository {
             review.setId(indexResponse.getId());
             return review;
         } catch (IOException e) {
-            throw new RuntimeException("Error saving review to Elasticsearch", e);
+            throw new RuntimeException("Error in saving review to Elasticsearch", e);
         }
     }
 
